@@ -615,6 +615,135 @@ body.light .theme-toggle .toggle-knob {
 .theme-toggle:hover .toggle-knob {
   box-shadow: 0 0 10px rgba(255,200,0,0.6);
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+
+  /* Scene padding */
+  .scene {
+    padding: 12px 10px 60px;
+    justify-content: flex-start;
+    padding-top: 70px;
+  }
+
+  /* Brand / Logo */
+  .brand {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .login-logo-wrap img {
+    height: 42px;
+  }
+  .brand-text b { font-size: 9px; }
+  .brand-text span { font-size: 12px; }
+
+  /* Card */
+  .deck {
+    padding: 20px 16px 28px;
+    border-radius: 18px;
+  }
+
+  /* Intro heading */
+  h1 { font-size: 22px; }
+  .lede { font-size: 13px; }
+  .eyebrow { font-size: 13px; }
+
+  /* Legend pills */
+  .legend {
+    font-size: 11px;
+    padding: 10px 10px;
+    gap: 4px;
+  }
+  .legend span { padding: 2px 8px; font-size: 10px; }
+
+  /* Form fields */
+  .field input {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+  .field label { font-size: 11px; }
+
+  /* Start button */
+  .btn {
+    height: 56px;
+    font-size: 16px;
+    border-radius: 18px;
+  }
+
+  /* Quiz screen */
+  .qhead { margin-bottom: 10px; }
+  .qcount { font-size: 11px; }
+  .qcount b { font-size: 17px; }
+  .bar { margin-bottom: 20px; }
+
+  .qtext {
+    font-size: 17px;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  /* Options */
+  .opt {
+    font-size: 16px;
+    padding: 13px 14px;
+    border-radius: 12px;
+  }
+  .opt .tick { width: 20px; height: 20px; }
+  .opt .num { font-size: 11px; padding: 2px 7px; }
+
+  /* Back button */
+  #backBtn {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+  }
+
+  /* Result screen */
+  .gauge-wrap {
+    width: 180px;
+    height: 180px;
+  }
+  .gauge-wrap svg { width: 180px; height: 180px; }
+  .score-num { font-size: 48px; }
+  .rtitle { font-size: 18px; }
+  .rtext { font-size: 13px; }
+  .brk-title { font-size: 9px; }
+  .brk .top { font-size: 12px; }
+  .brk .top span { font-size: 13px; }
+
+  /* Button row */
+  .btnrow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Theme toggle */
+  .theme-toggle {
+    top: 14px;
+    left: 14px;
+    width: 50px;
+    height: 26px;
+  }
+  .theme-toggle .toggle-knob {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+  body.light .theme-toggle .toggle-knob {
+    transform: translateX(24px);
+  }
+
+  /* hw-wrap */
+  .hw-wrap { padding: 8px 16px; }
+  .hw-svg { display: none; }
+}
+
+@media (max-width: 380px) {
+  h1 { font-size: 19px; }
+  .qtext { font-size: 15px; }
+  .opt { font-size: 14px; }
+  .deck { padding: 16px 12px 22px; }
+}
 </style>
 </head>
 <body>
